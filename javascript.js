@@ -18,6 +18,8 @@ using one of the methods I showed in the first lecture.
 javascript.js
 ******************************************************************************/
 
+/* <script src="javascript.js" defer></script> */
+
 /****************************************************************************** 
 ASSIGNMENT 2
 
@@ -30,6 +32,18 @@ Try to use both the let and const keywords
 
 //your code here
 
+let name = "louis";
+console.log("name");
+
+let num1 = 68;
+console.log(num1);
+
+let HP = true;
+console.log(HP);
+
+let drinks = ["saft", "øl", "vann"];
+console.log(drinks);
+
 /****************************************************************************** 
 ASSIGNMENT 3
 
@@ -38,6 +52,16 @@ as well as a few of the shorthand operators (++, --, +=, -=)
 ******************************************************************************/
 
 //your code here
+
+let HP1 = 5;
+HP = HP - 3;
+
+let HP2 = 9;
+HP -= 6;
+console.log(HP);
+
+let HP3 = 50;
+HP--;
 
 /****************************************************************************** 
 ASSIGNMENT 4
@@ -57,15 +81,32 @@ Try changing the values of the variables to make sure your IF/ELSE conditional
 can handle all cases correctly 
 ******************************************************************************/
 
-let userName = "";
+// let userName = "";
+// let userAge = 18;
+// let userIsLoggedIn = false;
+// let userIsBlocked = false;
+// let goToPage = "";
+
+//your code here
+
+const userName = "Louis";
 let userAge = 18;
 let userIsLoggedIn = false;
 let userIsBlocked = false;
 let goToPage = "";
 
-//your code here
+if (userName && userAge >= 18 && !userIsBlocked) {
+  userIsLoggedIn = true;
+  goToPage = "/home";
 
-/******************************************************************************
+  console.log("velkommen");
+} else {
+  console.log("error");
+}
+console.log(goToPage);
+console.log(userIsLoggedIn);
+
+/*****************************************************************************
 ASSIGNMENT 5
 
 Make a variable called userTitle and set the content equal to "Mr." if userMale 
@@ -78,6 +119,10 @@ Try changing userMale to both true and false and console.log your new variable,
 to see that your conditional is working.
 ******************************************************************************/
 
-const userMale = false;
-
 //your code here
+
+const userMale = true;
+
+const userTitle = userMale ? "Mr" : "Mr's";
+
+console.log(userTitle);
